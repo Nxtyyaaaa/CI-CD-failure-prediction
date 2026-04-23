@@ -119,7 +119,7 @@ df.select(
 # 11. Save for ML
 # -------------------------------
 
-df.write.mode("overwrite").parquet("processed_data")
+df.coalesce(1).write.mode("overwrite").parquet("processed_data")
 
 print("\n✅ FINAL DATASET SAVED → processed_data/")
 

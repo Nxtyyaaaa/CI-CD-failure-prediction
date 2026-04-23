@@ -1,3 +1,17 @@
 
+# Python
 venv/
 __pycache__/
+*.pyc
+
+# Data
+processed_data/
+*.parquet
+*.npy
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
